@@ -1,0 +1,23 @@
+.addsection{
+    position: absolute;
+    background-color: rgb(53, 53, 53);
+    border-radius: 5px;
+    color: white;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    display: grid;
+    align-items: center;
+}
+.addsection input{
+    margin-bottom: 8px;
+    margin-top: 4px;
+    padding: 4px ;
+}
+.addsection button{
+    margin-top: 20px;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+}

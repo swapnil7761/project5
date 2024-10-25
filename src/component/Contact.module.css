@@ -1,0 +1,19 @@
+.contactcard{
+    display: grid;
+    grid: auto / 1fr 5fr 1fr;
+    align-items: center;
+    margin: 8px 8px;
+}
+.cardimg{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.cardimg img{
+}
+.cardtext{
+}
+.cardbtn{
+    display: grid;
+    gap: 4px;
+}
