@@ -3,17 +3,33 @@
     grid: auto / 1fr 5fr 1fr;
     align-items: center;
     margin: 8px 8px;
+    padding: 4px;
+    gap: 4px;
+    background-color: rgb(255, 212, 131);
+    border-radius: 10px;
 }
 .cardimg{
     display: grid;
     align-items: center;
     justify-content: center;
 }
-.cardimg img{
-}
 .cardtext{
+    display: grid;
+    grid: auto auto/1fr ;
+    overflow-wrap: anywhere;
+}
+.cardtext p{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    ;
 }
 .cardbtn{
     display: grid;
     gap: 4px;
+}
+.cardbtn button{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 3px;
+    border-radius: 7.5px;
 }

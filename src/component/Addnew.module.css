@@ -1,16 +1,30 @@
-.addsection{
+.backdrop{
+    backdrop-filter: blur(3px);
+    width: 100vw;
+    max-width: 425px;
+    height: 100vh;
     position: absolute;
-    background-color: rgb(53, 53, 53);
-    border-radius: 5px;
-    color: white;
-    top: 140px;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 20px;
-    display: grid;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+.addsection{
+    background-color: rgb(88, 88, 88);
+    border-radius: 5px;
+    width: 260px;
+    height: fit-content;
+    color: white;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
 .addsection input{
+    width: unset;
     margin-bottom: 8px;
     margin-top: 4px;
     padding: 4px ;
@@ -20,4 +34,13 @@
     border: none;
     padding: 4px 8px;
     border-radius: 5px;
+}
+
+.closebtn button{
+    float: right;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: white;
 }

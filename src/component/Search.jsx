@@ -14,7 +14,7 @@ const Search = ({ filter, setList }) => {
         className={s.searchinput}
         onChange={(e) => filter(e)}
         type="text"
-        placeholder="Search contacts"
+        placeholder="Search contacts..."
       />
       <button className={s.searchbtn} onClick={() => setAdd(!add)}>
         +

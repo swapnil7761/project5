@@ -3,16 +3,13 @@ import Addnew from "./Addnew";
 import s from "./Contact.module.css";
 
 const Contact = ({ value, setList, list, index }) => {
-  //   const [edit, setEdit] = useState(false);
+  const [edit, setEdit] = useState(false);
   const deletebtn = () => {
     setList(list.filter((_, i) => i !== index));
   };
-  //   let data;
-  //   const editbtn = () => {
-  //     setEdit(!edit);
-  //     data = list.filter((_, i) => i == index);
-  //     console.log(data);
-  //   };
+  const editbtn = () => {
+    setEdit(!edit);
+  };
 
   return (
     <div className={s.contactcard}>
@@ -24,10 +21,12 @@ const Contact = ({ value, setList, list, index }) => {
         <p>{value.email}</p>
       </div>
       <div className={s.cardbtn}>
-        <button>edit</button>
+        <button onClick={editbtn}>edit</button>
         <button onClick={deletebtn}>delete</button>
       </div>
-      {/* {edit && <Addnew data={data} />} */}
+      {edit && (
+        <Addnew value={value} edit={edit} setEdit={setEdit} setList={setList} />
+      )}
     </div>
   );
 };

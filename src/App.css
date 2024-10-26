@@ -2,3 +2,12 @@
     box-sizing: border-box;
     margin: 0;padding: 0;
 }
+.appdiv{
+    background-color: rgb(49, 49, 49);
+    margin: 0 auto;
+    padding: 10px 10px;
+    min-height: 100vh;
+    max-width: 425px;
+    min-width: 325px;
+    position: relative;
+}
